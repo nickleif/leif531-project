@@ -4,7 +4,7 @@
 # tmax is traning max that is used in calculations
 
 squat_1rmx = squat_tmax = bench_1rmx = bench_tmax = deadlift_1rmx = deadlift_tmax = ohp_1rm = ohp_tmax = 0
-wordlist = {'Squat': squat_1rmx, 'Bench': squat_1rmx, 'Deadlift': deadlift_1rmx, 'OHP': ohp_1rm}
+maxDB = {'Squat': squat_1rmx, 'Bench': squat_1rmx, 'Deadlift': deadlift_1rmx, 'OHP': ohp_1rm}
 
 # calculate theoretical 1 rep max with given weight and reps
 # using Epley formula
@@ -32,5 +32,11 @@ def getMax():
             print(wordlist)
     else:
         getMax()
+
+def printSchedule():
+    print("")
+
+
+# MAIN HERE
 getMax()
 print (calctmax(wordlist['Squat']))
